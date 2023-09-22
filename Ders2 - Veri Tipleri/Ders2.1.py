@@ -5,7 +5,7 @@
 
 #String
 print(len(str(1234567890))) #Çıktı: 1234567890
-print("Merhaba"[0]) #Çıkıt: M diziler her zaman sıfırdan başlar
+print("Merhaba"[0]) #Çıkıt: Diziler her zaman sıfırdan başlar
 
 #Integer
 print(123 + 456) #Çıktı: 579
