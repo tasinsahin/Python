@@ -1,8 +1,8 @@
 # ------------------------------------------------------------------
 #Yönerge:  
 #Çıktı:
-#Uygulama:  
-import subprocess
+#Uygulama:   
+from clear import clear
 from logo import logo
 print(logo) 
 peyler = {}
@@ -25,7 +25,6 @@ while not muzayede_bittimi:
     muzayede_bittimi = True
     en_yuksek_peyverenkim(peyler)
   elif devammi == "evet":
-    command_to_execute = 'extension.clearTerminal'
-    subprocess.run(['code', '--command', command_to_execute])
+    clear()
  
 # ------------------------------------------------------------------
