@@ -3,7 +3,7 @@ from datetime import datetime
 from tabulate import tabulate
 
 with open('findik2.csv', newline='') as f:
-    reader = csv.DictReader(f)
+    reader = csv.DictReader(f) 
     data = list(reader)
 
 # Create a list of columns to keep

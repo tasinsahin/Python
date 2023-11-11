@@ -5,7 +5,7 @@ import pickle
 from neuralprophet import NeuralProphet
 
 # 1. Read in Data and Process Dates
-df = pd.read_csv('weatherAUS.csv')
+df = pd.read_csv('findik2.csv')
 df.head()
 df.Location.unique()
 df.columns
@@ -40,7 +40,7 @@ del m
 # Load the model
 with open('saved_model.pkl', "rb") as f:
     m = pickle.load(f)
-future = m.make_future_dataframe(data, periods=900)
+future = m.make_future_dataframe(data, periods=9000)
 forecast = m.predict(future)
 forecast.head()
 
